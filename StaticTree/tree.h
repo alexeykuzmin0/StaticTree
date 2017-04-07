@@ -25,4 +25,7 @@ namespace static_tree
 
 	template <class U, class V>
 	using tuple_push_t = typename tuple_push<U, V>::type;
+	
+	template<size_t number>
+	struct num : std::integral_constant<size_t, number> {};
 }

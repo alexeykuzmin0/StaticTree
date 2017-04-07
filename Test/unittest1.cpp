@@ -36,5 +36,11 @@ namespace Test
 				tuple<int, int, string, float>>,
 				"tuple push test int-int-string-float");
 		}
+
+		TEST_METHOD(Num)
+		{
+			static_assert(num<10>::value == integral_constant<size_t, 10>::value,
+				"Num test");
+		}
 	};
 }
