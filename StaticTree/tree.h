@@ -28,4 +28,8 @@ namespace static_tree
 	
 	template<size_t number>
 	struct num : std::integral_constant<size_t, number> {};
+
+
+    // Empty tree
+    struct NIL{};
 }
