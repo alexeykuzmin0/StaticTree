@@ -42,5 +42,13 @@ namespace Test
 			static_assert(num<10>::value == integral_constant<size_t, 10>::value,
 				"Num test");
 		}
-	};
+
+        TEST_METHOD(NumComp)
+        {
+            static_assert(num_comp::lt<integral_constant<size_t, 10>, integral_constant<size_t, 100>>::value,
+                "Num comp lt test");
+            static_assert(num_comp::eq<integral_constant<int, 10>, integral_constant<size_t, 10>>::value,
+                "Num comp eq test");
+        }
+    };
 }
