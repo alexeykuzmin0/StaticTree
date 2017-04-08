@@ -1,7 +1,6 @@
 #pragma once
 
-namespace static_tree
-{
+namespace static_tree {
     template <class U, class V>
     struct tuple_concat;
 
